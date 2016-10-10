@@ -1,4 +1,10 @@
 <html>
+  <%if @cat_names.nil?%>
+    <form name="input" action="/named-cat">
+    name: <input type="text" name="name">
+    submit: <input type="submit" value="Submit">
+  </form>
+  <%end %>
   <h1>My name is <%= @cat_names %></h1>
   <img style='border:5px dotted red;' src='http://bit.ly/1eze8aE'>
 </html>
