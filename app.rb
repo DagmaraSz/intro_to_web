@@ -11,4 +11,8 @@ end
 
 get '/warning' do
   "Sssh don't tell anyone!"
-  end
+end
+
+get '/cat' do
+"<html><img style='border:5px dotted red;' src='http://bit.ly/1eze8aE'></html>"
+end
