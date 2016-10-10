@@ -14,5 +14,5 @@ get '/warning' do
 end
 
 get '/cat' do
-"<html><img style='border:5px dotted red;' src='http://bit.ly/1eze8aE'></html>"
+  erb(:index)
 end
