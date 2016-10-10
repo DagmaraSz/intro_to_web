@@ -13,7 +13,13 @@ get '/warning' do
   "Sssh don't tell anyone!"
 end
 
-get '/cat' do
+get '/random-cat' do
   @cat_names = ['Amigo','Oscar','Viking'].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  p params[:name]
+  @cat_names = params[:name]
   erb(:index)
 end
